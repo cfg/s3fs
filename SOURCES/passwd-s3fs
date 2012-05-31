@@ -1,0 +1,12 @@
+# This file can be used in two ways:
+# 1) System-wide password file - Copy to /etc and make it readable only
+#    by root (chmod 0640 && chown root:root)
+# 2) Copy to ~/.passwd-s3fs owned by you and with 0600 permissions for
+#    per-user mounts
+#
+# In both cases, you can specify a general access and secret, like this:
+# accessKeyId:secretAccessKey
+#
+# or per-bucket credentials:
+# bucketName:accessKeyId:secretAccessKey
+
