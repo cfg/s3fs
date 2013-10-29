@@ -7,7 +7,7 @@ Based off the [spec file](http://kad.fedorapeople.org/packages/s3fs/s3fs.spec) c
 
 Includes RPMs for fuse-2.8.5.
 
-Tested on x64 CentOS 5.7 and 5.8
+Tested on x64 CentOS 5.7 and 5.8, Amazon Linux AMI 2013.09.
 
 Building fresh RPMs
 -------------------
@@ -45,4 +45,4 @@ Build the RPMs
 
 And install
 
-    rpm -Uvh ~/rpmbuild/RPMS/$HOSTTYPE/s3fs-1.61-5.$HOSTTYPE.rpm
+    rpm -Uvh ~/rpmbuild/RPMS/$HOSTTYPE/s3fs-1.73-1.$HOSTTYPE.rpm

@@ -1,5 +1,5 @@
 Name:           s3fs
-Version:        1.61
+Version:        1.73
 Release:        1%{?dist}
 Summary:        FUSE-based file system backed by Amazon S3
 Group:          System Environment/Base
@@ -20,12 +20,12 @@ BuildRequires:  openssl-devel, mailcap
 Conflicts:      fuse-s3fs
 
 %description
-s3fs is a FUSE file system that allows you to mount an Amazon S3 bucket as a 
-local file system. It stores files natively and transparently in S3 (i.e., 
-you can use other programs to access the same files). Maximum file size=64GB 
+s3fs is a FUSE file system that allows you to mount an Amazon S3 bucket as a
+local file system. It stores files natively and transparently in S3 (i.e.,
+you can use other programs to access the same files). Maximum file size=64GB
 (limited by s3fs, not Amazon).
 .
-s3fs is stable and is being used in number of production environments, e.g., 
+s3fs is stable and is being used in number of production environments, e.g.,
 rsync backup to s3.
 
 %global debug_package %{nil}
@@ -52,6 +52,9 @@ cp -p %{SOURCE1} passwd-s3fs
 
 
 %changelog
+* Tue Oct 29 2013 Norifumi Sunaoka <sunaoka@pocari.org> - 1.73-1
+- Initial build of 1.73.
+
 * Thu May 31 2012 Corey Gilmore	<git@cfgci.com> - 1.61-1
 - Initial build of 1.61. Disabled generation of useless debug package. Using spec from https://bugzilla.redhat.com/show_bug.cgi?id=725292
 
